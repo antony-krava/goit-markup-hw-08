@@ -1,0 +1,36 @@
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  .header & {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-section & {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .workplace-section & {
+    padding-bottom: 94px;
+  }
+
+  .advantages-section &,
+  .customers-section &,
+  .team-section &,
+  .portfolio-section & {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .footer & {
+    display: flex;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

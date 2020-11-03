@@ -1,0 +1,160 @@
+.footer {
+  background-color: $footer-bg-color;
+
+  &-left-side {
+    margin-right: 70px;
+  }
+
+  & .logo {
+    margin-right: 0;
+  }
+  &-logo {
+    margin-bottom: 20px;
+
+    & .logo {
+      color: $main-white-color;
+    }
+  }
+
+  &-address-list-item {
+    color: $footer-address-color;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  &-middle-side {
+    margin-right: 93px;
+  }
+
+  &-social-list {
+    display: flex;
+  }
+
+  &-social-list-item {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &-social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+
+  &-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: $main-white-color;
+  }
+}
+
+.main-footer-address-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.street {
+  color: $main-white-color;
+}
+
+.join {
+  display: inline-block;
+  color: $main-white-color;
+
+  font-weight: 700;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subscribe {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $main-white-color;
+}
+
+.newsletter {
+  &-form {
+    display: flex;
+  }
+
+  &-mail {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-left: 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      outline: none;
+      border-color: $accent-color;
+    }
+  }
+}
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding-left: 29px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  color: $main-white-color;
+  background-color: $accent-color;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: $main-white-color;
+}
