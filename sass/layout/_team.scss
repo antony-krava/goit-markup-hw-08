@@ -3,10 +3,6 @@
     background-color: $filter-button-bg-color;
   }
 
-  &-list {
-    display: flex;
-  }
-
   &-list-image {
     margin-bottom: 30px;
   }
@@ -32,8 +28,7 @@
 }
 
 .main-team-list {
-  padding-bottom: 30px;
-  width: calc((100% - 90px) / 4);
+  padding-bottom: 24px;
 
   background-color: $main-white-color;
   border-radius: 0px 0px 4px 4px;
@@ -41,17 +36,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   text-align: center;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 .social {
   &-links-list {
     display: flex;
     justify-content: space-between;
-    padding: 0 32px;
+    max-width: 206px;
+    margin: 0 auto;
   }
 
   &-link {
@@ -82,5 +74,51 @@
   .social-link:hover > &,
   .social-link:focus > & {
     fill: $main-white-color;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .main-team-list {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .main-team-list {
+    width: calc((100% - 30px) / 2);
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    &-list {
+      display: flex;
+    }
+  }
+
+  .main-team-list {
+    padding-bottom: 30px;
+    width: calc((100% - 90px) / 4);
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }

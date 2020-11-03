@@ -47,40 +47,55 @@ body {
 }
 
 .conteiner {
-  width: 1200px;
-  margin: 0 auto;
   padding: 0 15px;
-}
-
-.header .conteiner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .hero-section .conteiner {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.workplace-section .conteiner {
-  padding-bottom: 94px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 
 .advantages-section .conteiner,
 .customers-section .conteiner,
 .team-section .conteiner,
 .portfolio-section .conteiner {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.footer .conteiner {
-  display: flex;
-  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+  }
+  .hero-section .conteiner {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .advantages-section .conteiner,
+  .customers-section .conteiner,
+  .team-section .conteiner,
+  .portfolio-section .conteiner {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .workplace-section .conteiner {
+    padding-bottom: 94px;
+  }
 }
 
 .header {
