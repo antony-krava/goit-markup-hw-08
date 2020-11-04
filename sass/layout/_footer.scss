@@ -1,10 +1,6 @@
 .footer {
   background-color: $footer-bg-color;
 
-  &-left-side {
-    margin-right: 70px;
-  }
-
   & .logo {
     margin-right: 0;
   }
@@ -31,12 +27,9 @@
     }
   }
 
-  &-middle-side {
-    margin-right: 93px;
-  }
-
   &-social-list {
     display: flex;
+    justify-content: center;
   }
 
   &-social-list-item {
@@ -72,7 +65,7 @@
 }
 
 .main-footer-address-list:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .street {
@@ -81,13 +74,38 @@
 
 .join {
   display: inline-block;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
   color: $main-white-color;
+}
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  padding-left: 29px;
 
   font-weight: 700;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  color: $main-white-color;
+  background-color: $accent-color;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: $main-white-color;
 }
 
 .subscribe {
@@ -103,14 +121,10 @@
 }
 
 .newsletter {
-  &-form {
-    display: flex;
-  }
-
   &-mail {
-    width: 358px;
+    width: 100%;
     height: 50px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     padding-left: 16px;
 
     font-size: 16px;
@@ -132,29 +146,90 @@
   }
 }
 
-.subscribe-btn {
-  display: flex;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  padding-left: 29px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    &-logo {
+      text-align: center;
+    }
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
+    &-address-list {
+      text-align: center;
+    }
 
-  color: $main-white-color;
-  background-color: $accent-color;
+    &-left-side {
+      margin-bottom: 60px;
+    }
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
+    &-middle-side {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    &-right-side {
+      text-align: center;
+    }
+  }
 }
 
-.icon-send {
-  margin-left: 10px;
-  fill: $main-white-color;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    &-logo {
+      text-align: center;
+    }
+
+    &-address-list {
+      text-align: center;
+    }
+
+    &-left-side {
+      margin-bottom: 60px;
+    }
+
+    &-middle-side {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    &-right-side {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .newsletter-form {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &-left-side {
+      margin-right: 70px;
+    }
+
+    &-middle-side {
+      margin-right: 93px;
+    }
+  }
+
+  .newsletter {
+    &-form {
+      display: flex;
+      justify-content: space-between;
+      width: 570px;
+    }
+
+    &-mail {
+      width: 358px;
+      margin-bottom: 0;
+    }
+  }
+
+  .subscribe-btn {
+    margin: 0;
+  }
+
+  .main-footer-address-list:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }

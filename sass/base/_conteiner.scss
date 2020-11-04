@@ -11,7 +11,8 @@
   .advantages-section &,
   .customers-section &,
   .team-section &,
-  .portfolio-section & {
+  .portfolio-section &,
+  .footer & {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -23,9 +24,18 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .conteiner {
     width: 768px;
+
+    .footer & {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-left: 76px;
+      padding-right: 89px;
+    }
   }
 }
 
@@ -50,6 +60,12 @@
     .workplace-section & {
       padding-bottom: 94px;
     }
+
+    .footer & {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: baseline;
+    }
   }
 }
 
@@ -61,10 +77,4 @@
 //     align-items: center;
 //   }
 
-//   .footer & {
-//     display: flex;
-//     align-items: baseline;
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-//   }
 // }
