@@ -107,7 +107,6 @@ body {
   }
   .footer .conteiner {
     display: flex;
-    flex-wrap: nowrap;
     align-items: baseline;
   }
 }
@@ -802,8 +801,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -979,5 +978,13 @@ body {
   border: transparent;
   background-size: contain;
   background-origin: border-box;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
