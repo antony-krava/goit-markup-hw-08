@@ -46,6 +46,10 @@
       display: flex;
       flex-wrap: wrap;
     }
+
+    &-list-title {
+      text-align: start;
+    }
   }
 
   .main-advantages-list {
@@ -66,6 +70,10 @@
   .advantages {
     &-list {
       display: flex;
+    }
+
+    &-list-title {
+      text-align: start;
     }
   }
 
